@@ -39,7 +39,7 @@ const routes = require('./routes');
 const path = require('path');
 
 // Importa o módulo 'helmet', que ajuda a proteger a aplicação Express definindo cabeçalhos HTTP seguros
-const helmet = require('helmet');
+
 
 // Importa o módulo 'csrf' para proteção contra ataques CSRF (Cross-Site Request Forgery)
 // O CSRF é um tipo de ataque onde um site malicioso tenta fazer requisições
@@ -50,7 +50,7 @@ const { middlewareGlobal, checkCsrfError, csrfMiddleware } = require('./src/midd
 
 // Configura o middleware Helmet para proteger a aplicação Express
 // Helmet ajuda a proteger a aplicação definindo cabeçalhos HTTP seguros, como Content Security Policy
-app.use(helmet());
+
 
 // Configura o middleware para processar dados de requisições no formato URL-encoded (ex.: dados de formulários HTML)
 // O parâmetro extended: true permite o parsing de objetos aninhados usando a biblioteca 'qs'

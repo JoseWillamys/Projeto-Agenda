@@ -1,16 +1,48 @@
 <%- include('includes/head') %>
-<body>
-    <section class="container">
-        <h1>
-           <%= variavelLocal %> 
-        </h1>
-        <form action="/" method="POST">
-            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-            <label for="cliente">Cliente</label>
-            <input type="text" name="cliente" id="">
-            <button>Enviar</button>
-        </form>
+<%- include('includes/nav') %>
 
-    </section>   
-</body>
-</html>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-8 my-3">
+            <h1 class="text-center">Agenda</h1>
+            <p class="text-center lead">Seus contatos estão abaixo</p>
+
+            <div class="row">
+                <div class="col my-3">
+                    <div class="alert alert-danger">Error</div>
+                </div>
+            </div>
+
+            <div class="responsive-table">
+            <table class="table my-3" >
+                <tr>
+                    <td>Victo</td>
+                    <td>Silva</td>
+                    <td>79995987840</td>
+                    <td>victor@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Victo</td>
+                    <td>Silva</td>
+                    <td>79995987840</td>
+                    <td>victor@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Victo</td>
+                    <td>Silva</td>
+                    <td>79995987840</td>
+                    <td>victor@gmail.com</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+
+        
+
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+
+<%- include('includes/footer') %>
