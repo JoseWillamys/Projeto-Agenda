@@ -11,6 +11,7 @@ route.get('/', homeController.index);
 route.get('/login/index', loginController.index);
 
 // rotas de cadastro
-route.get('/cadastro/index', cadastroController.index);;
+route.get('/cadastro/index', cadastroController.index);
+route.post('/login/cadastro', cadastroController.cadastro);
 
 module.exports = route;
