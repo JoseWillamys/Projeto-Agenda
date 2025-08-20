@@ -1,0 +1,16 @@
+<%- include('includes/head') %>
+<body>
+    <section class="container">
+        <h1>
+           <%= variavelLocal %> 
+        </h1>
+        <form action="/" method="POST">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <label for="cliente">Cliente</label>
+            <input type="text" name="cliente" id="">
+            <button>Enviar</button>
+        </form>
+
+    </section>   
+</body>
+</html>

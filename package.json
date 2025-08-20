@@ -1,0 +1,46 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "utilizarei node, express e mongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js --ignore public --ignore frontend",
+    "dev": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseWillamys/nodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseWillamys/nodeJS/issues"
+  },
+  "homepage": "https://github.com/JoseWillamys/nodeJS#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^5.1.0",
+    "core-js": "^3.41.0",
+    "css-loader": "^7.1.2",
+    "csurf": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "express": "4.21",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.17.1",
+    "regenerator-runtime": "^0.14.1",
+    "style-loader": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "babel-loader": "^10.0.0",
+    "nodemon": "^3.1.10",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
