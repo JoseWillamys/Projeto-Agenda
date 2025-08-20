@@ -1,2 +1,2 @@
 # Projeto-Agenda
-JavaScript + Node.js - Projeto Agenda (com Express + MongoDB
+JavaScript + Node.js - Projeto Agenda (com Express + MongoDB)
